@@ -6,14 +6,22 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { BsMicFill } from "react-icons/bs";
 import { Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import { useStateValue } from "../StateProvider";
+import { actionTypes } from "../reducer";
 
 function Search({ hideButtons = false }) {
+  const [{}, dispatch] = useStateValue();
+
   const [input, setInput] = useState("");
   const history = useHistory();
 
   const searchFunction = (e) => {
     e.preventDefault();
     console.log("You hit the search Button");
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: input,
+    });
     history.push("/search");
   };
 
@@ -33,10 +41,16 @@ function Search({ hideButtons = false }) {
         </div>
       ) : (
         <div className='searchButtons'>
-          <Button className = "buttonsHidden" type='submit' onClick={searchFunction} variant='outline-dark'>
+          <Button
+            className='buttonsHidden'
+            type='submit'
+            onClick={searchFunction}
+            variant='outline-dark'>
             Google Search
           </Button>
-          <Button className = "buttonsHidden" variant='outline-dark'>I'm Feeling Lucky</Button>
+          <Button className='buttonsHidden' variant='outline-dark'>
+            I'm Feeling Lucky
+          </Button>
         </div>
       )}
     </form>
