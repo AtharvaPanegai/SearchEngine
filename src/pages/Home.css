@@ -37,7 +37,7 @@
 .homeBody{
     flex : 1;
     display:flex;
-    margin-top: 10%;
+    margin-top: 5%;
     flex-direction: column;
 }
 
