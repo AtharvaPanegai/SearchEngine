@@ -20,9 +20,10 @@ import { BsImage } from "react-icons/bs";
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
   // Live API CALL
-  // const {data} = useGoogleSearch(term);
+  const {data} = useGoogleSearch(term);
 
-  const data = Response;
+  // Mock API CALL
+  // const data = Response;
 
   console.log(data);
 
@@ -93,7 +94,28 @@ function SearchPage() {
           </div>
         </div>
       </div>
-      <div className='searchPageResults'></div>
+      {term && (
+        <div className='searchPageResults'>
+          <p className='searchPageResultCount'>
+            About {data?.searchInformation.formattedTotalResults} results in{" "}
+            {data?.searchInformation.formattedSearchTime} seconds for {term}
+          </p>
+          {data?.items.map((item) => (
+            <div className='searchPageSingleResult'>
+              <a className='searchPageResultLink' href={item.link}>
+                {item.pagemap?.cse_image?.length>0 && item.pagemap?.cse_image[0]?.src && (
+                  <img className = "searchPageResultImage" src = {item.pagemap?.cse_image?.length>0 && item.pagemap?.cse_image[0]?.src} alt="" />
+                )}
+                {item.displayLink}
+              </a>
+              <a className='searchPageResultTitle' href={item.link}>
+                <h2> {item.title} </h2>
+              </a>
+              <p className='searchPageResultSnippet'> {item.snippet} </p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

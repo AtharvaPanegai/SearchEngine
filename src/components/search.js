@@ -35,9 +35,9 @@ function Search({ hideButtons = false }) {
       {!hideButtons ? (
         <div className='searchButtons'>
           <Button type='submit' onClick={searchFunction} variant='outline-dark'>
-            Google Search
+            Leo Search
           </Button>
-          <Button variant='outline-dark'>I'm Feeling Lucky</Button>
+          <Button variant='outline-dark'>I'm Very Feeling Lucky</Button>
         </div>
       ) : (
         <div className='searchButtons'>
@@ -46,7 +46,7 @@ function Search({ hideButtons = false }) {
             type='submit'
             onClick={searchFunction}
             variant='outline-dark'>
-            Google Search
+            LeoSearch
           </Button>
           <Button className='buttonsHidden' variant='outline-dark'>
             I'm Feeling Lucky
