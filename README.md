@@ -4,7 +4,7 @@ LeoSearch is a search engine based on google's custom search API.
 
 ## Have a Look 
 ### Home Page
-![HomeLeoSearch](https://thumbs2.imgbox.com/06/50/WL5OMdBw_t.png)
+![HomeLeoSearch]('https://thumbs2.imgbox.com/06/50/WL5OMdBw_t.png')
 
 ### Search Results 
 ![SearchResultPage](https://thumbs2.imgbox.com/d6/bb/r92SrK9Q_t.png)
