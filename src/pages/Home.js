@@ -25,7 +25,7 @@ function Home() {
       </div>
       <div className='homeBody'>
         <img
-          src='https://prescribedhealth.in/wp-content/uploads/2021/09/Search-1.png'
+          src='https://prescribedhealth.in/wp-content/uploads/2021/09/Search-2.png'
           alt='Search.com'
         />
         <div className = "homeInputContainer">

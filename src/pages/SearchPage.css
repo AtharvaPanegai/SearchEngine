@@ -1,0 +1,52 @@
+/** @format */
+
+.searchPageLogo {
+  object-fit: contain;
+  height: 17vh;
+  width: 24vw;
+}
+
+.searchPageHeader {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+  align-items: flex-start;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+.searchPageHeaderBody {
+  margin-top: 4vh;
+}
+
+.searchPageOptions{
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+.searchPageOptionsLeft {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchPageSingleOption {
+  display: flex;
+  align-items: center;
+    margin-left: 20px;
+}
+.searchPageSingleOption a {
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.searchInputIcon{
+    margin-top: -5px;
+}
+
+.searchPageOptionsRight{
+    margin-left: 90px;
+}

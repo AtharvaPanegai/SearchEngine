@@ -16,7 +16,7 @@ const UseGoogleSearch = (term) => {
                 })
         }
 
-        fetchData().then(res => {
+        fetchData().then(res => { 
             console.log(res);
         }).catch(error => {
             console.log(error);
