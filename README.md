@@ -9,7 +9,7 @@ LeoSearch is a search engine based on google's custom search API.
 
 ### Search Results 
 
-![SearchResultPage](https://thumbs2.imgbox.com/d6/bb/r92SrK9Q_t.png)
+![SearchResultPage](https://prescribedhealth.in/wp-content/uploads/2021/09/leoSearch-searchPage.png)
 
 ## Installation
 
